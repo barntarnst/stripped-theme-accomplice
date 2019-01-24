@@ -63,10 +63,12 @@ function scripts() {
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\scripts' );
 
 /**
- * Enqueue scripts and styles.
+ * Add support for svg
  */
 function cc_mime_types($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($mimes, $new_filetypes );
+	return $file_types;
 }
-add_filter('upload_mimes', 'cc_mime_types');
+add_action('upload_mimes', __NAMESPACE__ . '\\cc_mime_types');
