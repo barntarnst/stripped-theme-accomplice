@@ -1,6 +1,6 @@
 # Stripped theme by Accomplice
 ## Why?
-The perfect theme when using, for example, Vue cli or Create React App to build your wordpress website. 
+The perfect theme when using, for example, Vue cli or Create React App to build your wordpress website. This is the best way to do wordpress 2019, no shit.
 
 ## Example of use (with vue cli):
 
