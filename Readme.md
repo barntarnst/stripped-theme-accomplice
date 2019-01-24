@@ -2,7 +2,7 @@
 ## Why?
 The perfect theme when using, for example, Vue cli or Create React App to build your wordpress website. 
 
-##Example of use (with Vue cli):
+## Example of use (with Vue cli):
 
 1. Setup of wordpress
 2. Install theme
