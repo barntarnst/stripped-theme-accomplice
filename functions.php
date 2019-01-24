@@ -61,3 +61,12 @@ function scripts() {
 	wp_enqueue_script( 'main-vue-vendors', get_template_directory_uri() . '/dist/js/chunk-vendors.js', array(), $rand, true );
 }
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\scripts' );
+
+/**
+ * Enqueue scripts and styles.
+ */
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
