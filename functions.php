@@ -20,7 +20,10 @@ if ( ! function_exists( __NAMESPACE__ . '\\setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-
+		/*
+		 * Add hd image size
+		 */
+		add_image_size( 'hd', 1920, 1080 );
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
