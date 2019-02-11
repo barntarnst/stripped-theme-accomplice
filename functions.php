@@ -52,9 +52,9 @@ add_action( 'widgets_init', __NAMESPACE__ . '\\widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-$rand = substr(md5(rand()), 0, 7);
 
 function scripts() {
+	$rand = substr(md5(rand()), 0, 7);
 	wp_enqueue_style( 'style.css', get_template_directory_uri() . '/dist/css/app.css',false,$rand,'all');
 	wp_enqueue_style( 'style.css', get_template_directory_uri() . '/dist/css/chunk-vendors.css',false,$rand,'all');
 	wp_enqueue_script( 'main-vue-app', get_template_directory_uri() . '/dist/js/app.js', array(), $rand, true );
